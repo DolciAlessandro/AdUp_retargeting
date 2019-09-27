@@ -40,7 +40,7 @@ ATTRIBUTES:
                                       ?
                                       
 'click_domain':                       327 different values (website names), 18887 nulls
-                                      ? they are website names, differencies wrt 'advertiser_id'?
+                                      ? they are website names ?
                                       
 'com_rate':                           12 different values, between 0.5 and 1
                                       ?
@@ -55,7 +55,8 @@ ATTRIBUTES:
                                       SE
                                       
 'domain':                             107 different values, 134081 nulls
-                                      ?
+                                      Web address for ex 'Bild.de' or 'Tag24.de'
+                                      Better because one website can consist of many domains.
                                       
 'effective_cpc':                      170 different values, from 0.01 to 2.14
                                       true CPC
@@ -91,7 +92,8 @@ ATTRIBUTES:
                                       SE [postal code of the user]
                                       
 'ppl_id':                             5 digits number, 896 different values
-                                      [it stands for placement_id], a slot on a webpage (sometimes advertisers use the same id for multiple slots)
+                                      [it stands for placement_id], a slot on a webpage
+                                      Warning: sometimes advertisers use the same id for multiple slots. See 'ssp_placement_id'
                                       
 'publisher_company_code_id':          (in numbers) 63 different values
                                       ?
@@ -118,16 +120,35 @@ ATTRIBUTES:
                                       ? how many times he saw that ad
                                       
 'search_query':                       10281 different values, 99418 nulls
+                                      ? it's an NL query
+                                      
 'session_view_count':                 67 different values, 107635 nulls, from 1 to 271
+                                      ?
+                                      
 'site_id':                            (in numbers) 295 different values
-                                      below 'publisher_id', 
+                                      below 'publisher_id', key for the site
+                                      
 'splittest_treatment_id':             64 different values, 370 nulls
+                                      ?
+                                      
 'ssp_placement_id':                   29 different values, 142674 nulls
+                                      id of the placement given by the Support Side Platform. More precise than 'placement_id'                                     
+
 'system_cpc_markup':                  always 0
+                                      useless
+                                      
 'timestamp':                          61455 different codes
+                                      SE [of the click]
+                                      
 'ts':                                 exactly the same as 'timestamp'
-'uid':                                user_id? 122539 different values
-'user_agent':                         browser + OS + device, 11875 different values
+                                      useless
+                                      
+'uid':                                122539 different values
+                                      ? user_id
+                                      
+'user_agent':                         11875 different values
+                                      browser + OS + device
+                                      
 'user_click_count':                   36 different values, 132459 nulls, from 1 to 52
 'user_ip':                            108804 different values (remember we have also 'impression_ip')
 'user_raw_conversion_count':          51 different values, 141537 nulls, from 1 to 144
