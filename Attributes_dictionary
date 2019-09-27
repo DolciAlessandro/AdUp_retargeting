@@ -1,6 +1,7 @@
 We have 52 columns and 143.921 rows
 
-'accounting':                         effective or max || 
+'accounting':                         'effective' or 'max'
+                                      ? related to the way 
 'ad_id':                              1936 different values
 'adgroup_id':                         876 different values
 'adgroup_keyword_id':                 5473 different values, 98817 nulls             
@@ -28,9 +29,14 @@ We have 52 columns and 143.921 rows
 'max_cpc':                            115 different values, between 0.01 and 2.21
 'overall_session_view_count':         557 different values, 89459 nulls
 'postal_code':                        9617 different values, 46754 nulls 
-'ppl_id':                             5 digits number, 896 different values    
+'ppl_id':                             5 digits number, 896 different values
+                                      [placement_id], a slot on a webpage
+                                      
 'publisher_company_code_id':          (in numbers) 63 different values
+                                      ?
 'publisher_id':                       (in numbers) 70 different values
+                                      who has a free slot for an ad [for ex. Bild]
+                                      
 'rank':                               between 0 to 7
 'reason_code':                        12 different codes
 'region_code':                        (in letters) 434 different values, 15788 nulls
@@ -39,7 +45,8 @@ We have 52 columns and 143.921 rows
 'retargeting_view_count':             239 different values, 135842 nulls, from 1 to 1373
 'search_query':                       10281 different values, 99418 nulls
 'session_view_count':                 67 different values, 107635 nulls, from 1 to 271
-'site_id':                            295 different values
+'site_id':                            (in numbers) 295 different values
+                                      below 'publisher_id', 
 'splittest_treatment_id':             64 different values, 370 nulls
 'ssp_placement_id':                   29 different values, 142674 nulls
 'system_cpc_markup':                  always 0
@@ -52,3 +59,14 @@ We have 52 columns and 143.921 rows
 'user_raw_conversion_count':          51 different values, 141537 nulls, from 1 to 144
 'visibility':                         66 different values, 69144 nulls, from 0 to 100
 'zone_id':                            10 different codes
+
+DIFFERENCIES WRT OTHER DATASETS:
+'host' was dropped at a certain point
+'is_placement_paced' and 'timestamp_impression' are added
+'is_placement_paced':                 0 or 1
+'timestamp_impression':               something different from 'ts'
+
+
+QUESTIONS:
+1. Example of site and publisher. A publisher can have more than one site but one site can also have more than one publisher (weird).
+2. 
