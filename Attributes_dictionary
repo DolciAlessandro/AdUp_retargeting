@@ -1,1 +1,54 @@
-aaa
+We have 52 columns and 143.921 rows
+
+'accounting':                         effective or max || 
+'ad_id':                              1936 different values
+'adgroup_id':                         876 different values
+'adgroup_keyword_id':                 5473 different values, 98817 nulls             
+'adgroup_site_id':                    3813 different values, 45104 nulls
+'advertiser_company_code_id':         2 different values, 141056 nulls
+'advertiser_group_id':                101 different values
+'advertiser_id':                      105 different values
+'campaign_id':                        311 different values
+'click_cost':                         194 different values, from 0 to 2.14
+'click_cost_publisher':               782 different values, from 0 to 1.83
+'click_domain':                       327 different values, 18887 nulls
+'com_rate':                           12 different values, between 0 and 1
+'conversions':                        60 different values, between 0 and 411
+'country_code':                       (in letters) 134 different values, 173 nulls
+'device_type':                        'phone', 'desktop' or 'tablet'
+'domain':                             107 different values, 134081 nulls
+'effective_cpc':                      170 different values, from 0.01 to 2.14
+'host':                               always 'worker01.adup.euc1.lan'        
+'impression_ip':                      108598 different values
+'key':                                143921 (all) different values
+'keyword_age':                        7172 different values, 133272 nulls
+'keyword_priority':                   10, 20, 30, 40 or 50, 133272 nulls
+'keyword_source':                     'none', 'url', 'query', 'retargeting', 'preset_site', 98817 'none'
+'keyword_type':                       'broad' 'exact' 'phrase', 98817 nulls
+'max_cpc':                            115 different values, between 0.01 and 2.21
+'overall_session_view_count':         557 different values, 89459 nulls
+'postal_code':                        9617 different values, 46754 nulls 
+'ppl_id':                             5 digits number, 896 different values    
+'publisher_company_code_id':          (in numbers) 63 different values
+'publisher_id':                       (in numbers) 70 different values
+'rank':                               between 0 to 7
+'reason_code':                        12 different codes
+'region_code':                        (in letters) 434 different values, 15788 nulls
+'retargeting_click_count':            7 different codes, 141693 nulls       
+'retargeting_tracking_count',
+'retargeting_view_count',
+'search_query',
+'session_view_count',
+'site_id',
+'splittest_treatment_id',
+'ssp_placement_id',
+'system_cpc_markup',
+'timestamp',
+'ts',
+'uid',
+'user_agent',
+'user_click_count',
+'user_ip',
+'user_raw_conversion_count',
+'visibility',
+'zone_id'
