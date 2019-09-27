@@ -1,48 +1,122 @@
 We have 52 columns and 143.921 rows
+first row: information about data
+second row: definition of the attribute
+[SE stands for self explanatory]
+
+
+ATTRIBUTES:
 
 'accounting':                         'effective' or 'max'
-                                      ? related to the way 
-'ad_id':                              1936 different values
-'adgroup_id':                         876 different values
-'adgroup_keyword_id':                 5473 different values, 98817 nulls             
-'adgroup_site_id':                    3813 different values, 45104 nulls
-'advertiser_company_code_id':         2 different values, 141056 nulls
-'advertiser_group_id':                101 different values
-'advertiser_id':                      105 different values
-'campaign_id':                        311 different values
+                                      ? related to the way the auction is done ?
+                                      
+'ad_id':                              1936 different values (numeric)
+                                      the entity with the text and image, usually very similar within one 'adgroup'
+                                      
+'adgroup_id':                         876 different values (numeric)
+                                      groups of ads. CPC is defined here
+                                      
+'adgroup_keyword_id':                 5473 different values (numeric), 98817 nulls
+                                      ?
+                                      
+'adgroup_site_id':                    3813 different values (numeric), 45104 nulls
+                                      ?
+                                      
+'advertiser_company_code_id':         1032 or 1274, 141056 nulls
+                                      ?
+                                      
+'advertiser_group_id':                101 different values (numeric)
+                                      groups to have same conversion tracking pixel for multiple advertisers
+                                      
+'advertiser_id':                      105 different values (numeric)
+                                      SE
+                                      
+'campaign_id':                        311 different values (numeric)
+                                      defines scheduling, budget, CPO and percentage adjustment for devices
+                                      
 'click_cost':                         194 different values, from 0 to 2.14
+                                      ?
+                                      
 'click_cost_publisher':               782 different values, from 0 to 1.83
-'click_domain':                       327 different values, 18887 nulls
-'com_rate':                           12 different values, between 0 and 1
+                                      ?
+                                      
+'click_domain':                       327 different values (website names), 18887 nulls
+                                      ? they are website names, differencies wrt 'advertiser_id'?
+                                      
+'com_rate':                           12 different values, between 0.5 and 1
+                                      ?
+                                      
 'conversions':                        60 different values, between 0 and 411
+                                      ?
+                                      
 'country_code':                       (in letters) 134 different values, 173 nulls
+                                      from which country the ad was clicked
+                                      
 'device_type':                        'phone', 'desktop' or 'tablet'
+                                      SE
+                                      
 'domain':                             107 different values, 134081 nulls
+                                      ?
+                                      
 'effective_cpc':                      170 different values, from 0.01 to 2.14
-'host':                               always 'worker01.adup.euc1.lan'        
+                                      true CPC
+                                      
+'host':                               always 'worker01.adup.euc1.lan'
+                                      useless
+                                      
 'impression_ip':                      108598 different values
-'key':                                143921 (all) different values
-'keyword_age':                        7172 different values, 133272 nulls
+                                      ?
+
+'key':                                143921 (all) different values (alpha-numeric string)
+                                      SE
+                                      
+'keyword_age':                        7172 different values, 133272 nulls, from 0 to 29714
+                                      it defines how far in the past was the last visit of this user on the website of the ad
+                                      
 'keyword_priority':                   10, 20, 30, 40 or 50, 133272 nulls
+                                      it defines how deep in the website the user was
+                                      
 'keyword_source':                     'none', 'url', 'query', 'retargeting', 'preset_site', 98817 'none'
+                                      ?
+
 'keyword_type':                       'broad' 'exact' 'phrase', 98817 nulls
+                                      ?
+                                      
 'max_cpc':                            115 different values, between 0.01 and 2.21
-'overall_session_view_count':         557 different values, 89459 nulls
-'postal_code':                        9617 different values, 46754 nulls 
+                                      maximum CPC set by advertiser
+                                      
+'overall_session_view_count':         557 different values, 89459 nulls, from 0 to 2180
+                                      ? it counts the view of ...
+
+'postal_code':                        9617 different values, 46754 nulls
+                                      SE [postal code of the user]
+                                      
 'ppl_id':                             5 digits number, 896 different values
-                                      [placement_id], a slot on a webpage
+                                      [it stands for placement_id], a slot on a webpage (sometimes advertisers use the same id for multiple slots)
                                       
 'publisher_company_code_id':          (in numbers) 63 different values
                                       ?
+                                      
 'publisher_id':                       (in numbers) 70 different values
                                       who has a free slot for an ad [for ex. Bild]
                                       
 'rank':                               between 0 to 7
-'reason_code':                        12 different codes
-'region_code':                        (in letters) 434 different values, 15788 nulls
-'retargeting_click_count':            7 different values, 141693 nulls, from 1 to 13    
+                                      ?
+                                      
+'reason_code':                        12 different codes (numeric)
+                                      ?
+                                      
+'region_code':                        434 different values, 15788 nulls
+                                      defines the region of users [I'm wonder what the numeric values stand for]
+                                      
+'retargeting_click_count':            7 different values, 141693 nulls, from 1 to 13
+                                      ? how many clicks he did in the past on that same ad
+                                      
 'retargeting_tracking_count':         85 different values, 133272 nulls, from 1 to 180
+                                      ?
+                                      
 'retargeting_view_count':             239 different values, 135842 nulls, from 1 to 1373
+                                      ? how many times he saw that ad
+                                      
 'search_query':                       10281 different values, 99418 nulls
 'session_view_count':                 67 different values, 107635 nulls, from 1 to 271
 'site_id':                            (in numbers) 295 different values
@@ -60,6 +134,12 @@ We have 52 columns and 143.921 rows
 'visibility':                         66 different values, 69144 nulls, from 0 to 100
 'zone_id':                            10 different codes
 
+
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+
+
+
 DIFFERENCIES WRT OTHER DATASETS:
 'host' was dropped at a certain point
 'is_placement_paced' and 'timestamp_impression' are added
@@ -67,6 +147,11 @@ DIFFERENCIES WRT OTHER DATASETS:
 'timestamp_impression':               something different from 'ts'
 
 
+BUSINESS RULES:
+1. 'max_cpc' >= 'effective_cpc'. The difference is not substancial.
+
+
 QUESTIONS:
 1. Example of site and publisher. A publisher can have more than one site but one site can also have more than one publisher (weird).
-2. 
+2. Same for 'adgroup_id' and 'adgroup_site_id'
+3. Differencies between 'domain' and 'click_domain'
