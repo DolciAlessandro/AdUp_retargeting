@@ -123,7 +123,7 @@ ATTRIBUTES:
                                       ? it's an NL query
                                       
 'session_view_count':                 67 different values, 107635 nulls, from 1 to 271
-                                      ?
+                                      ? 
                                       
 'site_id':                            (in numbers) 295 different values
                                       below 'publisher_id', key for the site
@@ -150,12 +150,22 @@ ATTRIBUTES:
                                       browser + OS + device
                                       
 'user_click_count':                   36 different values, 132459 nulls, from 1 to 52
+                                      ? count clicks of the user where?
+                                      
 'user_ip':                            108804 different values (remember we have also 'impression_ip')
+                                      SE
+                                      
 'user_raw_conversion_count':          51 different values, 141537 nulls, from 1 to 144
+                                      ? {try to see the distribution}
+                                      
 'visibility':                         66 different values, 69144 nulls, from 0 to 100
+                                      ?
+                                      
 'zone_id':                            10 different codes
+                                      ?
 
 
+--------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------
 
