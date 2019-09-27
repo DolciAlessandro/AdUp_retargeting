@@ -34,21 +34,21 @@ We have 52 columns and 143.921 rows
 'rank':                               between 0 to 7
 'reason_code':                        12 different codes
 'region_code':                        (in letters) 434 different values, 15788 nulls
-'retargeting_click_count':            7 different codes, 141693 nulls       
-'retargeting_tracking_count',
-'retargeting_view_count',
-'search_query',
-'session_view_count',
-'site_id',
-'splittest_treatment_id',
-'ssp_placement_id',
-'system_cpc_markup',
-'timestamp',
-'ts',
-'uid',
-'user_agent',
-'user_click_count',
-'user_ip',
-'user_raw_conversion_count',
-'visibility',
-'zone_id'
+'retargeting_click_count':            7 different values, 141693 nulls, from 1 to 13    
+'retargeting_tracking_count':         85 different values, 133272 nulls, from 1 to 180
+'retargeting_view_count':             239 different values, 135842 nulls, from 1 to 1373
+'search_query':                       10281 different values, 99418 nulls
+'session_view_count':                 67 different values, 107635 nulls, from 1 to 271
+'site_id':                            295 different values
+'splittest_treatment_id':             64 different values, 370 nulls
+'ssp_placement_id':                   29 different values, 142674 nulls
+'system_cpc_markup':                  always 0
+'timestamp':                          61455 different codes
+'ts':                                 exactly the same as 'timestamp'
+'uid':                                user_id? 122539 different values
+'user_agent':                         browser + OS + device, 11875 different values
+'user_click_count':                   36 different values, 132459 nulls, from 1 to 52
+'user_ip':                            108804 different values (remember we have also 'impression_ip')
+'user_raw_conversion_count':          51 different values, 141537 nulls, from 1 to 144
+'visibility':                         66 different values, 69144 nulls, from 0 to 100
+'zone_id':                            10 different codes
