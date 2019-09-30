@@ -16,10 +16,10 @@ ATTRIBUTES:
                                       groups of ads. CPC is defined here
                                       
 'adgroup_keyword_id':                 5473 different values (numeric), 98817 nulls
-                                      ?
+                                      in retargeting interaction for adgroup and tracking in a category???
                                       
 'adgroup_site_id':                    3813 different values (numeric), 45104 nulls
-                                      ?
+                                      interaction term for adgroup and site??
                                       
 'advertiser_company_code_id':         1032 or 1274, 141056 nulls
                                       ?
@@ -102,7 +102,7 @@ ATTRIBUTES:
                                       who has a free slot for an ad [for ex. Bild]
                                       
 'rank':                               between 0 to 7
-                                      ?
+                                      Order of the ads within one ad-slot.???
                                       
 'reason_code':                        12 different codes (numeric)
                                       ?
