@@ -188,3 +188,4 @@ QUESTIONS:
 1. Example of site and publisher. A publisher can have more than one site but one site can also have more than one publisher (weird).
 2. Same for 'adgroup_id' and 'adgroup_site_id'
 3. Differencies between 'domain' and 'click_domain'
+4. adgroup_keyword_id and adgroup_site_id are complementary
