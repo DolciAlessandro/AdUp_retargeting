@@ -14,28 +14,28 @@ ATTRIBUTES:
                                       ? related to the way the auction is done ?
                                       
 'ad_id':                              1936 different values (numeric)
-                                      the entity with the text and image, usually very similar within one 'adgroup'
+                                      the entity with the text and image, usually very similar within one 'adgroup'.
                                       
 'adgroup_id':                         876 different values (numeric)
-                                      groups of ads. CPC is defined here
+                                      groups of ads. CPC is defined here, not on the single ad.
                                       
 'adgroup_keyword_id':                 5473 different values (numeric), 98817 nulls
-                                      in retargeting interaction for adgroup and tracking in a category???
+                                      ? in retargeting, interaction for adgroup and tracking in a category.
                                       
 'adgroup_site_id':                    3813 different values (numeric), 45104 nulls
-                                      interaction term for adgroup and site??
+                                      ? interaction term for adgroup and site.
                                       
 'advertiser_company_code_id':         1032 or 1274, 141056 nulls
                                       ?
                                       
 'advertiser_group_id':                101 different values (numeric)
-                                      groups to have same conversion tracking pixel for multiple advertisers
+                                      advertisers are grouped to have same conversion tracking pixel.
                                       
 'advertiser_id':                      105 different values (numeric)
                                       SE
                                       
 'campaign_id':                        311 different values (numeric)
-                                      defines scheduling, budget, CPO and percentage adjustment for devices
+                                      defines scheduling, budget, CPO and percentage adjustment for devices.
                                       
 'click_cost':                         194 different values, from 0 to 2.14
                                       ?
@@ -46,18 +46,18 @@ ATTRIBUTES:
                                       R_
                                       
 'click_domain':                       327 different values (website names), 18887 nulls
-                                      ? they are website names ?
+                                      ? website names. See 'domain'.
                                       
 'com_rate':                           12 different values, between 0.5 and 1
                                       ?
                                       R_
                                       
 ** 'conversions':                     60 different values, between 0 and 411
-                                      ?
+                                      number of conversions associated to that particular click.
                                       R_
                                       
 'country_code':                       (in letters) 134 different values, 173 nulls
-                                      from which country the ad was clicked
+                                      from which country the ad was clicked.
                                       
 'device_type':                        'phone', 'desktop' or 'tablet'
                                       SE
@@ -65,6 +65,7 @@ ATTRIBUTES:
 'domain':                             107 different values, 134081 nulls
                                       Web address for ex 'Bild.de' or 'Tag24.de'
                                       Better because one website can consist of many domains.
+                                      See 'click_domain'.
                                       
 'effective_cpc':                      170 different values, from 0.01 to 2.14
                                       true CPC
@@ -80,23 +81,25 @@ ATTRIBUTES:
                                       SE
                                       
 'keyword_age':                        7172 different values, 133272 nulls, from 0 to 29714
-                                      it defines how far in the past was the last visit of this user on the website of the ad
+                                      it defines how far in the past was the last visit of this user
+                                      ? overall, or on the specific ad
                                       
 'keyword_priority':                   10, 20, 30, 40 or 50, 133272 nulls
                                       it defines how deep in the website the user was
+                                      ? overall, or on the specific ad
                                       
 'keyword_source':                     'none', 'url', 'query', 'retargeting', 'preset_site', 98817 'none'
                                       ?
 
 'keyword_type':                       'broad' 'exact' 'phrase', 98817 nulls
-                                      ?
+                                      which kind of keyword retargeting is applied
                                       
 'max_cpc':                            115 different values, between 0.01 and 2.21
                                       maximum CPC set by advertiser
                                       R_
                                       
 'overall_session_view_count':         557 different values, 89459 nulls, from 0 to 2180
-                                      ? it counts the view of ...
+                                      ? it counts the view of that user / all users on that specifc ad / add group
                                       R_
 
 'postal_code':                        9617 different values, 46754 nulls
@@ -113,17 +116,17 @@ ATTRIBUTES:
                                       who has a free slot for an ad [for ex. Bild]
                                       
 'rank':                               between 0 to 7
-                                      Order of the ads within one ad-slot.???
+                                      ? Order of the ads within one ad-slot.
                                       R_
                                       
 'reason_code':                        12 different codes (numeric)
                                       ?
                                       
 'region_code':                        434 different values, 15788 nulls
-                                      defines the region of users [I'm wonder what the numeric values stand for]
+                                      defines the region of users [numeric values ? maybe not in Germany]
                                       
 'retargeting_click_count':            7 different values, 141693 nulls, from 1 to 13
-                                      ? how many clicks he did in the past on that same ad
+                                      ? how many clicks the user did in the past on that same ad / ad group
                                       R_
                                       
 'retargeting_tracking_count':         85 different values, 133272 nulls, from 1 to 180
@@ -131,7 +134,7 @@ ATTRIBUTES:
                                       R_
                                       
 'retargeting_view_count':             239 different values, 135842 nulls, from 1 to 1373
-                                      ? how many times he saw that ad
+                                      ? how many times the user saw that ad / ad group
                                       R_
                                       
 'search_query':                       10281 different values, 99418 nulls
@@ -145,7 +148,7 @@ ATTRIBUTES:
                                       below 'publisher_id', key for the site
                                       
 'splittest_treatment_id':             64 different values, 370 nulls
-                                      ?
+                                      ? how they split for A/B testing
                                       
 'ssp_placement_id':                   29 different values, 142674 nulls
                                       id of the placement given by the Support Side Platform. More precise than 'placement_id'                                     
@@ -166,7 +169,7 @@ ATTRIBUTES:
                                       browser + OS + device
                                       
 'user_click_count':                   36 different values, 132459 nulls, from 1 to 52
-                                      ? count clicks of the user where?
+                                      ? count clicks of the user overall
                                       R_
                                       
 'user_ip':                            108804 different values (remember we have also 'impression_ip')
@@ -177,7 +180,7 @@ ATTRIBUTES:
                                       R_
                                       
 'visibility':                         66 different values, 69144 nulls, from 0 to 100
-                                      ?
+                                      ? How much of the ad is visible
                                       R_
                                       
 'zone_id':                            10 different codes
