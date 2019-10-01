@@ -4,6 +4,8 @@ We have 52 columns and 143.921 rows
 first row: information about data
 second row: definition of the attribute
 [SE stands for self explanatory]
+[R_ if there's a ranking hidden]
+[U_ useless]
 
 
 ATTRIBUTES:
@@ -37,18 +39,22 @@ ATTRIBUTES:
                                       
 'click_cost':                         194 different values, from 0 to 2.14
                                       ?
+                                      R_
                                       
 'click_cost_publisher':               782 different values, from 0 to 1.83
                                       ?
+                                      R_
                                       
 'click_domain':                       327 different values (website names), 18887 nulls
                                       ? they are website names ?
                                       
 'com_rate':                           12 different values, between 0.5 and 1
                                       ?
+                                      R_
                                       
-'conversions':                        60 different values, between 0 and 411
+** 'conversions':                     60 different values, between 0 and 411
                                       ?
+                                      R_
                                       
 'country_code':                       (in letters) 134 different values, 173 nulls
                                       from which country the ad was clicked
@@ -62,9 +68,10 @@ ATTRIBUTES:
                                       
 'effective_cpc':                      170 different values, from 0.01 to 2.14
                                       true CPC
+                                      R_
                                       
 'host':                               always 'worker01.adup.euc1.lan'
-                                      useless
+                                      U_
                                       
 'impression_ip':                      108598 different values
                                       ?
@@ -86,9 +93,11 @@ ATTRIBUTES:
                                       
 'max_cpc':                            115 different values, between 0.01 and 2.21
                                       maximum CPC set by advertiser
+                                      R_
                                       
 'overall_session_view_count':         557 different values, 89459 nulls, from 0 to 2180
                                       ? it counts the view of ...
+                                      R_
 
 'postal_code':                        9617 different values, 46754 nulls
                                       SE [postal code of the user]
@@ -105,6 +114,7 @@ ATTRIBUTES:
                                       
 'rank':                               between 0 to 7
                                       Order of the ads within one ad-slot.???
+                                      R_
                                       
 'reason_code':                        12 different codes (numeric)
                                       ?
@@ -114,18 +124,22 @@ ATTRIBUTES:
                                       
 'retargeting_click_count':            7 different values, 141693 nulls, from 1 to 13
                                       ? how many clicks he did in the past on that same ad
+                                      R_
                                       
 'retargeting_tracking_count':         85 different values, 133272 nulls, from 1 to 180
                                       ?
+                                      R_
                                       
 'retargeting_view_count':             239 different values, 135842 nulls, from 1 to 1373
                                       ? how many times he saw that ad
+                                      R_
                                       
 'search_query':                       10281 different values, 99418 nulls
                                       ? it's an NL query
                                       
 'session_view_count':                 67 different values, 107635 nulls, from 1 to 271
-                                      ? 
+                                      ?
+                                      R_
                                       
 'site_id':                            (in numbers) 295 different values
                                       below 'publisher_id', key for the site
@@ -137,13 +151,13 @@ ATTRIBUTES:
                                       id of the placement given by the Support Side Platform. More precise than 'placement_id'                                     
 
 'system_cpc_markup':                  always 0
-                                      useless
+                                      U_
                                       
 'timestamp':                          61455 different codes
                                       SE [of the click]
                                       
 'ts':                                 exactly the same as 'timestamp'
-                                      useless
+                                      U_
                                       
 'uid':                                122539 different values
                                       ? user_id
@@ -153,15 +167,18 @@ ATTRIBUTES:
                                       
 'user_click_count':                   36 different values, 132459 nulls, from 1 to 52
                                       ? count clicks of the user where?
+                                      R_
                                       
 'user_ip':                            108804 different values (remember we have also 'impression_ip')
                                       SE
                                       
 'user_raw_conversion_count':          51 different values, 141537 nulls, from 1 to 144
                                       ? {try to see the distribution}
+                                      R_
                                       
 'visibility':                         66 different values, 69144 nulls, from 0 to 100
                                       ?
+                                      R_
                                       
 'zone_id':                            10 different codes
                                       ?
