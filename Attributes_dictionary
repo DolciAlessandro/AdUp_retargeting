@@ -82,10 +82,10 @@ ATTRIBUTES:
                                       
 'keyword_age':                        7172 different values, 133272 nulls, from 0 to 29714
                                       it defines how far in the past the last visit of this user was on a specific product
+                                      user_id x product group
                                       
 'keyword_priority':                   10, 20, 30, 40 or 50, 133272 nulls
-                                      it defines how deep in the website the user was
-                                      ? overall, or on the specific ad
+                                      it defines how deep in the website the user was, user_id x product group
                                       
 'keyword_source':                     'none', 'url', 'query', 'retargeting', 'preset_site', 98817 'none'
                                       ?
