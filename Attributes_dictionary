@@ -81,9 +81,7 @@ ATTRIBUTES:
                                       SE
                                       
 'keyword_age':                        7172 different values, 133272 nulls, from 0 to 29714
-                                      it defines how far in the past the last visit of this user was
-                                      ? overall, or on the specific ad
-                                      ?? how it is created?
+                                      it defines how far in the past the last visit of this user was on a specific product
                                       
 'keyword_priority':                   10, 20, 30, 40 or 50, 133272 nulls
                                       it defines how deep in the website the user was
