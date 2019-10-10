@@ -81,7 +81,7 @@ ATTRIBUTES:
                                       SE
                                       
 'keyword_age':                        7172 different values, 133272 nulls, from 0 to 29714
-                                      it defines how far in the past the last visit of this user was on a specific product
+                                      it defines how far in the past (minutes) the last visit on a specific product was
                                       user_id x product group
                                       
 'keyword_priority':                   10, 20, 30, 40 or 50, 133272 nulls
