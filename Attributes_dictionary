@@ -131,7 +131,8 @@ SEND YOU LIST OF UNIQUE IPs, IMPRESSION
                                       defines the region of users [numeric values not in Germany]
                                       
 'retargeting_click_count':            7 different values, 141693 nulls, from 1 to 13
-                                      how many clicks the user did in the last 30 days on that same retargeting advertiser
+                                      how many clicks the user did in the last 30 days on that same retargeting advertiser.
+                                      This counter is resetted after a click.
                                       R_
                                       
 'retargeting_tracking_count':         85 different values, 133272 nulls, from 1 to 180
