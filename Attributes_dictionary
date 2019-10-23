@@ -114,6 +114,7 @@ ATTRIBUTES:
                                       
 'publisher_id':                       (in numbers) 70 different values
                                       who has a free slot for an ad [for ex. Bild]
+                                      2533 is RTB!
                                       
 'rank':                               between 0 to 7 [could be bigger]
                                       Order of the ads within one ad-slot. 0 is for fraud detection, the ad is only
@@ -201,7 +202,7 @@ SEND YOU LIST OF UNIQUE IPs, IMPRESSION
 --------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------
-
+RTB if publisher_id==2533
 
 
 DIFFERENCIES WRT OTHER DATASETS:
